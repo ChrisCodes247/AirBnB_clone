@@ -1,19 +1,19 @@
-#!/usr/bin/env python3
-#!/usr/bin/env python3
-"""Defines BaseModel class."""
+#!/usr/bin/python3
+"""Defines the BaseModel class."""
 import models
-
-from datetime import datetime
 from uuid import uuid4
+from datetime import datetime
+
 
 class BaseModel:
+    """Represents the BaseModel of the HBnB project."""
 
     def __init__(self, *args, **kwargs):
         """Initialize a new BaseModel.
 
         Args:
-            *args (any): Unused
-            **kwargs (dict): key/value pairs of attributes.
+            *args (any): Unused.
+            **kwargs (dict): Key/value pairs of attributes.
         """
         tform = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid4())
